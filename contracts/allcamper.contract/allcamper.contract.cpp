@@ -401,7 +401,7 @@ namespace allcamper {
    void allcamper_contract::reviewrental( const uint64_t rent_id, const account_name renter, const double score, const string& review_data_multihash ) {
 
       rental_review_table_idx rental_review_table( _self, _self );
-      eosio_assert( rental_review_table.find( rent_id ) == rental_review_table.end(), "duplicated rent_id for review table" );
+      eosio_assert( rental_review_table.find( rent_id ) == rental_review_table.end(), "duplicated rent_id on review table" );
 
       camping_car_rental_table_idx camping_car_rental_table( _self, _self );
       auto camping_car_rental_it = camping_car_rental_table.find( rent_id );
@@ -409,6 +409,7 @@ namespace allcamper {
       auto camping_car_rental_info = *camping_car_rental_it;
 
       eosio_assert( camping_car_rental_info.renter_account == renter, "not matched renter account" );
+      eosio_assert( camping_car_rental_info.status == CAMPING_CAR_RENTAL_STATUS_CONFIRMED, "car retal is not *confirmed* status" );
       eosio_assert( score >= 0.0 && score <= 10.0, "invalid score value" );
 
       camping_car_table_idx camping_car_table( _self, _self );
