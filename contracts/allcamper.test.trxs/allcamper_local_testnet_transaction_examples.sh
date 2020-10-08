@@ -231,5 +231,3 @@ $YOSEMITE_CLI push action allcamper reviewrental '{"rent_id":7001,"renter":"camp
 $YOSEMITE_CLI get table -L 7001 -U 7001 -l 1 allcamper allcamper reviews
 $YOSEMITE_CLI get table -L 10001 -U 10001 -l 1 allcamper allcamper campingcars
 
-
-#$YOSEMITE_CLI push action allcamper reviewrental '{"rent_id":7002,"renter":"camperaaa111","score":8.5,"review_data_multihash":"QmfM2r8seH2GiRaC4esTjeraXEachRt8ZsSeGaWTPLyMoG"}' -p camperaaa111@active --txfee-payer allcampersvc -v producer.a
