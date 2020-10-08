@@ -232,3 +232,15 @@ $YOSEMITE_CLI_TESTNET push action allcamper reviewrental '{"rent_id":7001,"rente
 $YOSEMITE_CLI_TESTNET get table -L 7001 -U 7001 -l 1 allcamper allcamper reviews
 $YOSEMITE_CLI_TESTNET get table -L 10001 -U 10001 -l 1 allcamper allcamper campingcars
 
+
+##################################
+## Sentinel Testnet Explorer
+
+## AllCamper AKRW Token Contract
+http://testnet-sentinel-explorer.yosemitelabs.org/accounts/akrw.token
+
+## AllCamper Trade/Rental Contract
+http://testnet-sentinel-explorer.yosemitelabs.org/accounts/allcamper
+
+## AllCamper User Account
+http://testnet-sentinel-explorer.yosemitelabs.org/accounts/camperaaa111
