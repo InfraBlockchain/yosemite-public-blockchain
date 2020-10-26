@@ -244,3 +244,6 @@ http://testnet-sentinel-explorer.yosemitelabs.org/accounts/allcamper
 
 ## AllCamper User Account
 http://testnet-sentinel-explorer.yosemitelabs.org/accounts/camperaaa111
+
+
+curl -XPOST http://testnet-sentinel.yosemitelabs.org:8888/v1/chain/get_token_balance -d '{"token":"akrw.token","account":"camperaaa113"}' | jq
